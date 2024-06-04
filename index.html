@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anny's Birthday</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <div class="card">
+    <div id="countdown-container">
+      <h1>feliz aniversário pandinha! <3</h1>
+      <div id="countdown"></div>
+    </div>
+
+
+    <div class="player-container">
+      <h3>Dê play para uma melhor experiência</h3>
+  
+           <div class="players">
+           <div class="player">
+           <div class="imgBx">
+                <img src="img-cults.jpg" alt="Capa do álbum">
+            </div>
+            <h2>Always Forever</h2>
+            <h4>Cults</h4>
+            <audio src="alwaysforever.mp3" controls></audio>
+        </div>
+    </div>
+    </div>
+    
+    <div class="gallery-container">
+      <h1>Galeria de Momentos</h1>
+      <div class="gallery">
+        <img src="img1.jpg" alt="Imagem 1" onclick="abrirModal(this.src, 'Se apagar o restante das duas palavras e deixa só as iniciais, formam as nossas iniciais')">
+        <img src="img2.jpg" alt="Imagem 2" onclick="abrirModal(this.src, 'quando resolvi dramatizar do nada kkkk')">
+        <img src="img3.jpg" alt="Imagem 3" onclick="abrirModal(this.src, 'o maior e melhor rsrsrs')">
+        <img src="img4.jpg" alt="Imagem 4" onclick="abrirModal(this.src, 'até hoje esperando uma de nós ficar rica ksks')">
+        <img src="img5.jpg" alt="Imagem 5" onclick="abrirModal(this.src, 'por isso não temos nenhum video juntas')">
+        <img src="img6.jpg" alt="Imagem 6" onclick="abrirModal(this.src, 'to infinity and beyond!')">
+        <img src="img7.jpg" alt="Imagem 7" onclick="abrirModal(this.src, 'sim, apesar de não demonstrar eu morria de ciumes')">
+        <img src="img8.jpg" alt="Imagem 8" onclick="abrirModal(this.src, 'é um prazer dividir o mesmo neurônio com você')">
+        <img src="img9.jpg" alt="Imagem 9" onclick="abrirModal(this.src, 'a se a gente pudesse ksksk')">
+        <img src="img10.jpg" alt="Imagem 10" onclick="abrirModal(this.src, 'chuchuzim mais lindo!')">
+        <img src="img11.jpg" alt="Imagem 11" onclick="abrirModal(this.src, 'eu só continuei no curso por sua causa, foi otimo ter você como minha dupla')">
+        <img src="img12.jpg" alt="Imagem 12" onclick="abrirModal(this.src, 'eu já sabia desde os primórdios ksksksk')">
+        <img src="img13.jpg" alt="Imagem 13" onclick="abrirModal(this.src, 'apenas gaes <3')">
+        <img src="img14.jpg" alt="Imagem 14" onclick="abrirModal(this.src, 'eu fiquei a semana toda com um sorriso no rosto com isso aqui e não só porque era zoeira')">
+        <img src="img15.jpg" alt="Imagem 15" onclick="abrirModal(this.src, 'não tava sendo fácil mas quando to com você fico bem')">
+        <img src="img16.jpeg" alt="Imagem 16" onclick="abrirModal(this.src, 'essa é uma das primeiras fotos juntas é uma das minhas favs e especiais pra mim <3')">
+        <img src="img18.jpeg" alt="Imagem 18" onclick="abrirModal(this.src, 'eu só queria que você soubesse que eu te amava mas eu nem entreguei kkk')">
+        <img src="img19.jpg" alt="Imagem 19" onclick="abrirModal(this.src, 'não temos videos mas temos prints de videochamada')">
+        <img src="img20.jpg" alt="Imagem 20" onclick="abrirModal(this.src, 'eu tava só o bagaço de doente mas você tava lá comigo 😭')">>
+        <img src="img21.jpeg" alt="Imagem 21" onclick="abrirModal(this.src, 'posso até não ser mais, mas é meu print favorito, você que lute 😘')">
+        <img src="img22.jpg" alt="Imagem 22" onclick="abrirModal(this.src, 'foi legal enquanto durou, precisamos fazer outra')">
+        <img src="img23.jpg" alt="Imagem 23" onclick="abrirModal(this.src, 'a primeira imagem resumi essa 🤭')">
+        <img src="img17.jpg" alt="Imagem 24" onclick="abrirModal(this.src, 'apenas meu momento favorito ever com você... ❤️')">
+        <img src="img25.jpg" alt="Imagem 25" onclick="abrirModal(this.src, '🐼❤️🐼')">
+    
+
+        <!-- Adicione mais imagens e seus eventos onclick conforme necessário -->
+      </div>
+
+      <!-- Modal para exibição em tela cheia -->
+
+
+    <div id="modal" class="modal">
+      <span class="fechar" onclick="fecharModal()">&times;</span>
+      <img id="imagemModal" class="modal-imagem" onclick="fecharModal()">
+      <div id="legendaModal" class="legenda-modal"></div>
+    </div>
+
+    <div id="modal" class="modal" onclick="fecharModal()">
+      <span class="fechar">&times;</span>
+    </div>
+
+
+   
+
+    <div id="modal" class="modal">
+      <span class="fechar" onclick="fecharModal()">&times;</span>
+      <div class="modal-container">
+        <img id="imagemModal" class="modal-imagem" onclick="fecharModal()">
+        <div id="legendaModal" class="legenda-modal"></div>
+      </div>
+    </div>
+    
+
+
+  </div>
+
+
+
+
+      <div class="memory-game-container">
+    <h1>QUIZ - 10 ANOS DE AMIZADE</h1>
+    <div id="memory-game" class="memory-game"></div>
+    <div id="question-container" class="question-container"></div>
+    
+     </div>
+
+  
+
+     <div class="space">     </div>
+
+     <div class="postcard">
+      
+       <span class="paragraph">Querida pandinha 🐼
+         <br> 
+         <br>
+         
+         <p class="text">primeiramente parabéns pelo seu dia! 🎉🎂❤️ <br>
+          Ao longo desses 10 anos de parceria, de mudanças e evoluções, o que mais gosto é que, apesar de tudo,
+          sua essência permanece a mesma e são os pequenos detalhes da sua personalidade que fazem com que eu 
+          continue amando você com todo o seu jeitinho peculiar aquariano de ser. <br> 
+          Eu já aprendi a lidar com seus bangs, 
+          e adoro pessoas diferentonas e você é (e isso é um elogio, claro) kkk mas é uma pessoa incrível, uma ótima mãe, irmã, filha e amiga, você cuida 
+          das pessoas e se importa com elas por mais que as vezes pareça desligada e desatenta, isso quando se trata
+           do mundo virtual ksks mas é altamente carismática e prestativa, o que as vezes pode até ser confundido 
+           com outra coisa se você não for esperto, caso contrário vai ser só mais uma nega na lista mas eu não sou 
+           tuas negas então to safe kkkk  <br>
+          Então, agradeço a Deus por ter cruzado nossos caminhos, você é a minha melhor duplinha de estudos e da vida,
+          consigo rir genuinamente quando estou com voce, talvez seja porque dividimos o mesmo neuronio kkk 
+          agradeço também por cada momento de paciência, compreensão ao longo desses anos, pois sei que
+          lidar comigo pode ser desafiador... as vezes sou meio ignorante ou como você diz "ordinária", sensível demais e tenho a mania de sumir… mas sua
+          habilidade de me compreender e me amar mesmo com todas minhas esquisitices e limitações é algo que 
+          valorizo sempre.
+         <br>
+         Neste aniversário, meu desejo é que a vida te dê um deploy (lançamento) de sonhos se realizados, 
+         desafios transformados em oportunidade e que cada momento seja cheio de amor, felicidade e dinheiro 
+         também com certeza (voz da tulla luana nessa ultima kkk).
+         Assim como na programação, onde cada linha de código é escrita para alcançar um objetivo, cada momento compartilhado entre nós foi como uma linha de código que contribuiu para fortalecer a nossa amizade. A nossa conexão permanece inalterada, mas, assim como em um software, continuamos a fazer  commits (envios) de melhorias constantes... e cada bug (obstáculo) que a vida mandou a 
+         gente resolveu juntas, cada update (atualização) que aconteceu, continuamos aqui, e agora estamos na nossa versão atual a 10.0 e espero que possamos continuar programando juntas por mais 10 anos, porque nosso amor e amizade é o melhor software que já desenvolvemos. Eu te amo! Feliz aniversário, Annybear!❤️
+        </p>
+   
+   <br>
+        <h4 align="right"> Com carinho, sua pandinha. 🐼</h4>
+                     
+                     
+       </span>
+       
+     </div>
+     <div class="space">     </div>
+   
+  <script src="script.js"></script>
+</body>
+</html>

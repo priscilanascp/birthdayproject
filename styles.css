@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* Estilos para o cartão e os componentes */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", system-ui;
+ 
+ 
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: #000000;/*Cor de fundo da página*/
+  padding: 10px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: smaller;
+
+
+}
+
+/* Estilos para a contagem regressiva */
+#countdown-container {
+  width: 98%;
+  text-align: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  margin-bottom: 20px;
+  position: relative;
+  border: 2px solid #000;
+  overflow: hidden;
+  box-shadow: 
+    5px 5px 5px rgba(0, 0, 0, 0.3),
+    10px 12px 0px rgba(144, 19, 254, 1),
+    20px 24px 0px rgba(189, 16, 224, 1);
+}
+
+
+
+  /* Estilizando o h1 */
+  h1 {
+    padding: 12px;
+    /* Adicionando uma animação para mudar as cores */
+    animation: rainbowText 10s infinite;
+    /* Para dar um bom contraste, usei fonte branca */
+    color: white;
+    /* Para criar um efeito de texto, usei um contorno */
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  /* Definindo a animação das cores do arco-íris */
+  @keyframes rainbowText {
+    0% {
+      color: violet;
+    }
+    15% {
+      color: indigo;
+    }
+    30% {
+      color: blue;
+    }
+    45% {
+      color: green;
+    }
+    60% {
+      color: yellow;
+    }
+    75% {
+      color: orange;
+    }
+    90% {
+      color: red;
+    }
+    100% {
+      color: violet;
+    }
+  }
+
+  h2,  h3, h4 {
+    margin: 10px;
+}
+
+  .player-container {
+    text-align: center;
+    color: white; /* Cor do texto no cabeçalho */
+    padding: 15px 0;
+    margin: 0 auto; /* Centralizar na tela */
+}
+
+.players {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center; /* Centralizar horizontalmente */
+    margin-top: 50px;
+}
+
+.player {
+    width: 300px;
+    border-radius: 10px; /* Borda arredondada */
+    overflow: hidden;
+    margin: 0 10px; /* Adicionado espaçamento lateral */
+}
+
+.player img {
+    width: 300px;
+    height: auto;
+    border-bottom: 1px solid #ddd; /* Adicione uma borda inferior à imagem */
+}
+
+
+
+audio {
+    width: 100%;
+    outline: none;
+}
+
+
+  /* Estilos para a galeria de fotos */
+  .gallery-container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid  #ffffff; 
+    margin-top:30px; 
+    margin-bottom:30px; 
+    padding:10px;
+    gap:10px;
+
+  }
+
+  .gallery img {
+    width: 250px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding:10px;
+
+
+  }
+
+  .gallery img:hover {
+    transform: scale(1.1);
+  }
+
+/* Estilos para a legenda dentro do modal */
+.legenda-modal {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px; /* Ajuste a margem conforme necessário */
+}
+
+/* Estilos para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Estilos para a imagem dentro do modal */
+.modal-imagem {
+  display: block;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: 80%; /* Ajuste o tamanho da imagem conforme desejado */
+  max-height: 80vh; /* Ajuste o tamanho da imagem conforme desejado */
+  border: 3px solid #ffffff;
+  border-radius: 5;
+  
+  
+}
+
+/* Estilos para o botão de fechar */
+.fechar {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+/* Estilos para o botão de fechar */
+.fechar {
+  color: white;
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+  /* Estilos para o quiz */
+  .memory-game-container {
+    text-align: center;
+    padding: 100px;
+    border-radius: 5px;
+    background-color: rgb(255, 249, 249);
+    color: #0000ff;
+    font-family: "Poppins", sans-serif;
+    border: 2px solid #000;
+    overflow: hidden;
+    box-shadow: 
+      5px 5px 5px rgba(0, 0, 0, 0.3),
+      10px 12px 0px rgba(144, 19, 254, 1),
+      20px 24px 0px rgba(189, 16, 224, 1);
+  }
+
+  .memory-game {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+
+/* Estilizando os números como botões */
+
+
+.memory-card {
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Adicione estilos de borda e cor de fundo */ 
+    background-color: #f0f0f0;
+    /* Adicione preenchimento para melhorar a aparência */
+    padding: 8px 16px;
+    /* Adicione uma cor de texto para melhor contraste */
+    color: #000;
+    /* Adicione margem para separar os cartões */
+    margin-top: 15px;
+    /* Adicione um estilo de cursor ao passar o mouse */
+    cursor: pointer;
+  }
+
+  /* Altere a cor quando o mouse passar por cima */
+  .memory-card:hover {
+    background-color: rgba(144, 19, 254, 1);
+  }
+
+  /* Altere a cor quando o botão for pressionado */
+  .memory-card:active {
+    background-color: rgba(189, 16, 224, 1);
+  }
+
+  #question-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+
+  #pergunta {
+    margin-bottom: 20px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #opcoes button:hover {
+    background-color: #f5f5f5;
+  }
+
+
+
+  /* Estilos para o cartão de mensagem */
+
+
+    .space {
+        background:rgba(0, 0, 0, 0.25);
+        padding-top: 100px;
+       }
+       
+       
+       .postcard {
+        
+         width: 1000px;
+         height: 100vh;
+         color: #f9f9f9;
+         margin: 0 auto;
+         border-radius: 8px;
+         display: block;
+         justify-content: space-between;
+         padding: 2em;
+         box-shadow: .8em .8em 15px rgba(0,0,0,.3);
+         text-align: left;
+       }
+
+      
+       .paragraph {
+        margin: 0 auto;
+        display: block;
+        justify-content: space-between;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        padding: 20px;
+        font-size: 14px;
+
+         /* Adicionando uma animação para mudar as cores */
+      animation: rainbowText 10s infinite;
+      /* Para dar um bom contraste, usei fonte branca */
+      color: white;
+      /* Para criar um efeito de texto, usei um contorno */
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    /* Definindo a animação das cores do arco-íris */
+    @keyframes rainbowText {
+      0% {
+        color: violet;
+      }
+      15% {
+        color: indigo;
+      }
+      30% {
+        color: blue;
+      }
+      45% {
+        color: green;
+      }
+      60% {
+        color: yellow;
+      }
+      75% {
+        color: orange;
+      }
+      90% {
+        color: red;
+      }
+      100% {
+        color: violet;
+      }
+    }
+       
+
+      p {
+        padding: 14px;
+      }
+
+
+      p{
+        color:rgba(189, 16, 224, 1);
+        
+      }
+
+   
+       
+     
